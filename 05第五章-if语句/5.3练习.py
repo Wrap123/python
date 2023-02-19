@@ -41,20 +41,29 @@ elif age >= 65:
     price = 20
 print(f"Your admission cost is ${price}.")
 
+# ！！！注意事项  in和==使用区别
+gender = 'M'
+# 用in时，是表示列表中的一个对象（in“More”表示M、o、r、e中的任意一个）
+if gender in "More":
+    print("True")
+# 用 == 时，是表示整个"More"
+if gender == "More":
+    print("True")
+
 # 动手试一试 试题
 # 1.外星人颜色
 alien_color = "red"
-if alien_color in "green":
+if alien_color == "green":
     print("Congratulations on your 5 points!")
 # 2.外星人颜色
-if alien_color in "green":
+if alien_color == "green":
     print("Congratulations on your 5 points!")
 else:
     print("You get 10 points.")
 # 3.外星人颜色3
-if alien_color in "green":
+if alien_color == "green":
     print("Congratulations on your 5 points!")
-elif alien_color in "yellow":
+elif alien_color == "yellow":
     print("You get 10 points.")
 else:
     print("You get 15 points.")
