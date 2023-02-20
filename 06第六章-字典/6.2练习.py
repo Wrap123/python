@@ -90,3 +90,6 @@ data = {
     '元组': '其内的数据不会被改变'
 }
 print(data)
+# 学完下一节后的回顾练习
+for name, info in data.items():
+    print(f"{name} is a {info}")
